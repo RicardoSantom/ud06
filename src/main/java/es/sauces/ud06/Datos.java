@@ -9,17 +9,17 @@ import java.time.LocalDateTime;
 
 /**
  *
- * @author daw1
+ * @author Usuario
  */
-public class Llamada extends Consumo{
-    private String numero;
-    private int duracion;
+public class Datos extends Consumo{
+    private int volumen;
 
-    public Llamada(LocalDateTime fechaHora, float importe, String numero, int duracion) {
+    public Datos(LocalDateTime fechaHora, float importe,int volumen) { 
         super(fechaHora, importe);
-        this.duracion = duracion;
-        this.numero = numero;
+        this.volumen = volumen;
     }
+    
+    
 
     @Override
     public String getTipoConsumo() {

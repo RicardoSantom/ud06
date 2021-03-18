@@ -9,17 +9,26 @@ import java.time.LocalDateTime;
 
 /**
  *
- * @author daw1
+ * @author Usuario
  */
-public class Llamada extends Consumo{
+public class Sms extends Consumo{
     private String numero;
-    private int duracion;
 
-    public Llamada(LocalDateTime fechaHora, float importe, String numero, int duracion) {
+    public Sms(LocalDateTime fechaHora, float importe,String numero) {
         super(fechaHora, importe);
-        this.duracion = duracion;
         this.numero = numero;
     }
+
+    public String getNumero() {
+        return numero;
+    }
+
+    @Override
+    public String toString() {
+        return  numero;
+    }
+    
+    
 
     @Override
     public String getTipoConsumo() {
@@ -30,5 +39,4 @@ public class Llamada extends Consumo{
     public int getDuracionVolumen() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
 }
