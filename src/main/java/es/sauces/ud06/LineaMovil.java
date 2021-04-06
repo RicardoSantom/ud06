@@ -54,15 +54,19 @@ public class LineaMovil {
     public float registrarLlamada(LocalDateTime fechaHora,String numero, int duracion){
         
         
-        return ;
+        return 0;
     }
     public float registrarSms(LocalDateTime fechaHora, String numero){
+        return 0;
         
     }
+
     public int registrarConsumoDatos(LocalDateTime fechaHora,int volumen){
+        return 0;
         
     }
     public String getConsumo( ){
+        return null;
         
     }
     public List<Consumo> getConsumos() {
