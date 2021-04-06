@@ -6,6 +6,7 @@
 package es.sauces.ud06;
 import java.util.List;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 /**
  *
  * @author daw1
@@ -22,7 +23,7 @@ public class LineaMovil {
         this.tarifa = tarifa;
         this.titular = titular;
         this.datosDisponibles = datosDisponibles;
-        this.consumos = consumos;
+        this.consumos = new ArrayList<>();
     }
 
     public String getNumero() {
